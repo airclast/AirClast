@@ -1,6 +1,7 @@
 
 
 import { X, MapPin, Heart, BarChart3, LayoutDashboard, FileText } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function Sidebar({ isOpen, onClose }) {
     return (
@@ -67,9 +68,10 @@ export function Sidebar({ isOpen, onClose }) {
 
                     {/* Sign up button */}
                     <div className="mt-8">
-                        <button className="w-full py-2 px-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-md hover:from-blue-700 hover:to-blue-600 transition-colors">
+                        
+                        <Link to={`/signup`} className="w-full py-2 px-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-md hover:from-blue-700 hover:to-blue-600 transition-colors">
                             Sign up
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,7 @@ import {
 
 
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 
 const SignUpForm = () => {
@@ -130,7 +131,11 @@ const SignUpForm = () => {
                     >
                         Sign up
                     </button>
-
+                    {/* Already have an account link */}
+                    <p className="text-gray-400 text-xs ">
+                        Already have an account?{" "}
+                       <Link to={`/signin`} className="text-blue-400 hover:text-blue-300 underline">Sign in</Link>
+                    </p>
                     {/* Social Login */}
                     <div className="space-y-4">
                         <p className="text-gray-400 text-sm ">Or continue with</p>
@@ -162,6 +167,7 @@ const SignUpForm = () => {
                         By registering you with our{" "}
                         <button className="text-blue-400 hover:text-blue-300 underline">Terms and Conditions</button>
                     </p>
+                    
                 </form>
             </div>
         </div>

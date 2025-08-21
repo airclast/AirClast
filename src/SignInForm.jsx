@@ -1,5 +1,6 @@
 import { Eye, EyeOff, Mail } from "lucide-react"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function SignInForm() {
     const [showPassword, setShowPassword] = useState(false)
@@ -65,7 +66,7 @@ export default function SignInForm() {
                     </div>
 
                     {/* Forgot password link */}
-                    <div className="text-right">
+                    <div>
                         <a href="#" className="text-white text-sm hover:text-blue-400 transition-colors">
                             Forget Password ?
                         </a>
@@ -80,7 +81,7 @@ export default function SignInForm() {
                     </button>
 
                     {/* Social login divider */}
-                    <div className="text-center">
+                    <div>
                         <span className="text-gray-400 text-sm">Or continue with</span>
                     </div>
 
@@ -106,12 +107,13 @@ export default function SignInForm() {
                     </div>
 
                     {/* Register link */}
-                    <div className="text-center">
+                    <div>
                         <span className="text-gray-400 text-sm">
+                            
                             Don't you've account ?{" "}
-                            <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">
+                            <Link to="/signup" className="text-blue-400 hover:text-blue-300 transition-colors">
                                 Register
-                            </a>
+                            </Link>
                         </span>
                     </div>
                 </form>
