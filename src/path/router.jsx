@@ -2,11 +2,11 @@ import {
     createBrowserRouter,
   } from "react-router-dom";
 import App from "../App";
-import Navbar from "../Navbar";
+
 import Home from "../Home";
 
 import { WeatherDashboard } from "../weather-dashboard";
-import Signin from "../authentication/SignIn";
+import Signin from "../authentication/Signin";
 import Signup from "../authentication/Signup";
 
 
