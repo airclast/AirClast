@@ -4,9 +4,10 @@ import {
 import App from "../App";
 import Navbar from "../Navbar";
 import Home from "../Home";
+
+import { WeatherDashboard } from "../weather-dashboard";
 import Signin from "../authentication/SignIn";
 import Signup from "../authentication/Signup";
-import { WeatherDashboard } from "../weather-dashboard";
 
 
   
